@@ -1,0 +1,305 @@
+body, html, header {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+/*header*/
+header {
+    padding: 50px;
+    color: azure;
+    background-color: black;
+    background-image: url(/app-001/background.jpg);
+    background-size: cover;
+    opacity: 85%;
+}
+
+header h1 {
+    margin: 0px;
+    font-size: 32px;
+    opacity: 150%;
+}
+
+header p {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+#phone-header {
+    display: none;
+}
+
+.button {
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    background-color: azure;
+    padding: 15px 20px;
+    border-radius: 10rem;
+    letter-spacing: .15rem;
+    &:hover {
+        color: azure;
+        background-color: #c474d2;
+    }
+}
+
+/*main*/
+main {
+    padding: 20px 0px;
+    text-align: center;
+    background-image: linear-gradient(#ffffff, #f0f1ff);
+}
+
+/*section 1*/
+section {
+    padding: 10px 0px;
+}
+.sec-text-title {
+    display: flex;
+}
+
+.text-aside {
+    padding: 0px 8px;
+}
+
+.icon-main-sec1 {
+    float: left;
+    height: 60px;
+    padding: 0px 20px 40px 0px;
+}
+
+main section div h3 {
+    text-align: left;
+}
+
+main section div p {
+    padding: 0px 5px 25px 0px;
+    text-align: left;
+}
+
+.button-2 {
+    color: azure;
+    background-color: #80c138;
+}
+
+/*section 2*/
+
+#section2 {
+    padding: 90px 20px 10px 20px;
+}
+
+main section div h2 {
+    text-align: left;
+}
+
+.text-little-strong {
+    font-weight: bold;
+    color: rgb(60, 60, 60);
+}
+
+.author img {
+    float: left;
+    padding-right: 15px;
+}
+
+.author p {
+    padding-top: 16px;
+    font-size: 16px;
+}
+
+/*section3*/
+#section3 {
+    padding: 20px;
+    > h2 {
+        font-weight: 100;
+        letter-spacing: 2px;
+    }
+}
+
+.section3colluns > div {
+    padding: 15px 0px 15px 0px;
+}
+
+.data {
+    color: #a5b4f1;
+    font-weight: 500;
+}
+
+p.calm {
+    color: #626363;
+}
+
+/*footer*/
+footer {
+    color: azure;
+    padding: 20px;
+    background-color: #717171;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #e5e5e5;
+}
+
+.footer-lists {
+    padding: 10px 30px;
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+    a {
+        margin: 0px 5px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+    }
+}
+
+.icon-social {
+    width: 20px;
+    border-radius: 30%;
+    &:hover {
+        width: 40px;
+        background-color: var(--icon-color);
+    }
+}
+
+/*----------------------720----------------------*/
+@media (min-width: 720px) {
+  
+    /*header*/
+    header h1 {
+        font-size: 46px;
+    }
+    
+    header p {
+        font-size: 22px;
+        padding: 20px 0px 30px 0px;
+    }
+
+    #phone-header {
+        display: inline;
+        float: right;
+        width: 250px;
+    }
+
+    .button {
+        font-size: 18px;
+    }
+    
+    /*main*/
+    .section.side-a-side {
+        display: flex;
+    }
+    
+    .image-aside {
+        width: 280px;
+        height: 100%;
+        align-self: center;
+    }
+    
+    /*section 1*/
+    #section1>div>div>h3 {
+        font-size: 20px;
+    }
+    #section1>div>div>p {
+        font-size: 18px;
+    }
+
+    /*section 2*/
+    #section2 {
+        padding: 140px 80px 80px 80px;
+    }
+    
+    .text-aside {
+        padding: 0px 20px;
+    }
+     
+    /*section3*/
+    #section3 {
+        padding: 40px 60px;
+        text-align: center;
+    }
+    
+    .section3colluns {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: left;
+        > div {
+            width: 300px;
+            padding: 0px 5px;
+        }
+    }
+  
+    /*footer*/
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #socials {
+        padding-top: 50px;
+    }
+    
+}
+
+/*----------------------1024----------------------*/
+@media (min-width: 1024px) {
+    /*header*/
+    header {
+        padding: 100px;
+    }
+
+    header h1 {
+        font-size: 56px;
+    }
+
+    header p {
+        font-size: 28px;
+    }
+
+    #phone-header {
+        width: 260px;
+    }
+
+    .button {
+        font-size: 28px;
+    }
+
+    /*main*/
+    main {
+        padding: 40px 120px;
+        text-align: center;
+    }
+
+    /*section 1*/
+
+    main > h2 {
+        font-size: 30px;
+    }
+
+    #section1 > div > div > h3 {
+        font-size: 26px;
+    }
+
+    #section1 > div > div > p {
+        font-size: 22px;
+    }
+
+    .icon-main-sec1 {
+        float: left;
+        height: 30px;
+        padding: 0px 20px 0px 0px;
+    }
+
+    .button-2 {
+        color: azure;
+        background-color: #80c138;
+    }
+}
