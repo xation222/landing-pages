@@ -59,7 +59,7 @@ section {
     display: flex;
 }
 
-.text-aside {
+.text-aside1 {
     padding: 0px 8px;
 }
 
@@ -122,12 +122,16 @@ main section div h2 {
 }
 
 .data {
+    font-size: 12px;
     color: #a5b4f1;
     font-weight: 500;
 }
 
 p.calm {
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
     color: #626363;
+    padding-right: 24px;
 }
 
 /*footer*/
@@ -205,22 +209,30 @@ footer ul li a {
     }
     
     /*section 1*/
-    #section1>div>div>h3 {
-        font-size: 20px;
+    .container-column {
+        display: flex;
+        padding: 0px;
+        margin: 0px;
     }
-    #section1>div>div>p {
-        font-size: 18px;
+    .text-aside1 > div > div > img {
+        padding: 0px;
+        margin: 0px;
+    }
+    .text-aside1 > div > div > h3 {
+        padding: 0px;
+        margin: 0px;
     }
 
     /*section 2*/
     #section2 {
-        padding: 140px 80px 80px 80px;
+        margin-top: 70px;
+        padding: 35px;
     }
-    
-    .text-aside {
+
+    .text-aside2 {
         padding: 0px 20px;
     }
-     
+
     /*section3*/
     #section3 {
         padding: 40px 60px;
@@ -236,11 +248,19 @@ footer ul li a {
             padding: 0px 5px;
         }
     }
+
+    p.data {
+        font-size: 16px;
+    }
+
+    p.calm {
+        font-size: 16px;
+    }
   
     /*footer*/
     footer {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
     }
     
     #socials {
@@ -301,5 +321,43 @@ footer ul li a {
     .button-2 {
         color: azure;
         background-color: #80c138;
+    }
+
+    /*section 3*/
+    #section3 {
+        padding: 40px 140px;
+    }
+
+    .data {
+        font-size: 14px;
+    }
+
+    p.calm {
+        font-size: 14px;
+    }
+
+    /*footer*/
+    #socials {
+        padding-left: 80px;
+    }
+}
+/*----------------------1366----------------------*/
+@media (min-width: 1366px) {
+    /*main*/
+    main {
+        padding: 40px 180px;
+        text-align: center;
+    }
+    #section1 {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    #section2 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    #section3 {
+        padding-left: 200px;
+        padding-right: 200px;
     }
 }
